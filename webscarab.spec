@@ -3,16 +3,17 @@
 Summary:	WebScarab - a Web Application Review tool for Java
 Name:		webscarab
 Version:	0.1
-Release:	0.2
+Release:	0.3
 License:	GPL v2
 Group:		Development/Languages/Java
 URL:		http://www.owasp.org/index.php/OWASP_WebScarab_Project
+Source0:	http://dl.sourceforge.net/owasp/%{name}-src-%{_snap}.zip
+# Source0-md5:	b3ba39de51f3715aab4a7d75b7c8a4d5
+BuildRequires:	ant
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	jpackage-utils
-Source0:	http://dl.sourceforge.net/owasp/%{name}-src-%{_snap}.zip
-# Source0-md5:	b3ba39de51f3715aab4a7d75b7c8a4d5
 Requires:	jre > 1.4
 BuildArch:	noarch
 ExclusiveArch:	i586 i686 pentium3 pentium4 athlon %{x8664} noarch
@@ -32,6 +33,9 @@ development of Exodus and implement them as part of WebScarab.
 
 %prep
 %setup -q -n %{name}-%{_snap}
+
+%build
+%ant dist
 
 %install
 rm -rf $RPM_BUILD_ROOT
