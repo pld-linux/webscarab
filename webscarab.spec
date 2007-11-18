@@ -14,15 +14,15 @@ URL:		http://www.owasp.org/index.php/OWASP_WebScarab_Project
 Source0:	http://dl.sourceforge.net/owasp/%{name}-src-%{_snap}.zip
 # Source0-md5:	b3ba39de51f3715aab4a7d75b7c8a4d5
 BuildRequires:	ant
+BuildRequires:	beanshell >= 2.0-0.b1
 BuildRequires:	bsf >= 2.3.0
-BuildRequires:	bsh >= 2.0b1
 BuildRequires:	chardet
-BuildRequires:	jakarta-commons-logging >= 1.0.4
 BuildRequires:	concurrent
 BuildRequires:	htmlparser
+BuildRequires:	jakarta-commons-logging >= 1.0.4
+BuildRequires:	javahelp >= 2.0.02
 BuildRequires:	jcommon >= 0.8.7
 BuildRequires:	jfreechart >= 0.9.12
-BuildRequires:	jhall >= 2.0_02
 BuildRequires:	jpackage-utils
 BuildRequires:	openamf
 BuildRequires:	rpm-javaprov
