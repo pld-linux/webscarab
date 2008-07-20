@@ -5,14 +5,15 @@
 %include	/usr/lib/rpm/macros.java
 %define		_snap	20070504-1631
 Summary:	WebScarab - a Web Application Review tool for Java
+Summary(pl.UTF-8):	WebScarab - narzędzie do oceny aplikacji WWW w Javie
 Name:		webscarab
 Version:	0.1
 Release:	0.3
 License:	GPL v2
 Group:		Development/Languages/Java
-URL:		http://www.owasp.org/index.php/OWASP_WebScarab_Project
 Source0:	http://dl.sourceforge.net/owasp/%{name}-src-%{_snap}.zip
 # Source0-md5:	b3ba39de51f3715aab4a7d75b7c8a4d5
+URL:		http://www.owasp.org/index.php/OWASP_WebScarab_Project
 BuildRequires:	ant
 BuildRequires:	beanshell >= 2.0-0.b1
 BuildRequires:	bsf >= 2.3.0
@@ -50,8 +51,19 @@ could download all the pages on a site. It stayed that way for almost
 a year, before I decided to take lessons learned during the
 development of Exodus and implement them as part of WebScarab.
 
+%description -l pl.UTF-8
+WebScarab to narzędzie do oceny aplikacji WWW. Narodziło się z
+projektu ludzi przebywających na liście WebAppSec na SourceForge
+opisującego potężne, wolnodostępne narzędzie do oceny aplikacji WWW
+pod kątem luk w bezpieczeństwie. Póki co niewiele z początkowego
+projektu zostało zaimplementowane. WebScarab został zapoczątkowany
+jako pająk ściągający wszystkie strony z serwisu. Pozostawał w tym
+stanie przez prawie rok, aż autor wykorzystał doświadczenia z
+tworzenia Exodusa i zaimplementował je jako część WebScaraba.
+
 %prep
 %setup -q -n %{name}-%{_snap}
+# ??? must not touch ..
 cp ../webscarab-current/server.p12 .
 
 %build
