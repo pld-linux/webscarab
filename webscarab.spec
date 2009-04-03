@@ -20,8 +20,9 @@ BuildRequires:	bsf >= 2.3.0
 BuildRequires:	chardet
 BuildRequires:	concurrent
 BuildRequires:	htmlparser
-BuildRequires:	jakarta-commons-logging >= 1.0.4
-BuildRequires:	javahelp >= 2.0.02
+BuildRequires:	java-commons-logging >= 1.0.4
+BuildRequires:	java-help >= 2.0.02
+BuildRequires:	java-wsdl4j
 BuildRequires:	jcommon >= 0.8.7
 BuildRequires:	jfreechart >= 0.9.12
 BuildRequires:	jpackage-utils
@@ -29,7 +30,6 @@ BuildRequires:	openamf
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 BuildRequires:	tagsoup >= 1.0rc2
-BuildRequires:	wsdl4j
 Requires:	jpackage-utils
 Requires:	jre > 1.4
 %if %(locale -a | grep -q '^en_US$'; echo $?)
