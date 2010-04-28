@@ -36,7 +36,6 @@ Requires:	jre > 1.4
 BuildRequires:	glibc-localedb-all
 %endif
 BuildArch:	noarch
-ExclusiveArch:	i586 i686 pentium3 pentium4 athlon %{x8664} noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_appdir	%{_datadir}/%{name}
