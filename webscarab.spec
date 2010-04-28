@@ -11,20 +11,20 @@ Version:	0.1
 Release:	0.3
 License:	GPL v2
 Group:		Development/Languages/Java
-Source0:	http://dl.sourceforge.net/owasp/%{name}-src-%{_snap}.zip
+Source0:	http://downloads.sourceforge.net/owasp/%{name}-src-%{_snap}.zip
 # Source0-md5:	b3ba39de51f3715aab4a7d75b7c8a4d5
 URL:		http://www.owasp.org/index.php/OWASP_WebScarab_Project
 BuildRequires:	ant
 BuildRequires:	beanshell >= 2.0-0.b1
-BuildRequires:	bsf >= 2.3.0
 BuildRequires:	chardet
 BuildRequires:	concurrent
 BuildRequires:	htmlparser
+BuildRequires:	java-bsf >= 2.3.0
 BuildRequires:	java-commons-logging >= 1.0.4
 BuildRequires:	java-help >= 2.0.02
+BuildRequires:	java-jcommon >= 0.8.7
+BuildRequires:	java-jfreechart >= 0.9.12
 BuildRequires:	java-wsdl4j
-BuildRequires:	jcommon >= 0.8.7
-BuildRequires:	jfreechart >= 0.9.12
 BuildRequires:	jpackage-utils
 BuildRequires:	openamf
 BuildRequires:	rpm-javaprov
