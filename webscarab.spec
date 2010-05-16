@@ -30,6 +30,7 @@ BuildRequires:	openamf
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 BuildRequires:	tagsoup >= 1.0rc2
+BuildRequires:	unzip
 Requires:	jpackage-utils
 Requires:	jre > 1.4
 %if %(locale -a | grep -q '^en_US$'; echo $?)
