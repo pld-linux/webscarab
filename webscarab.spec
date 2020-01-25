@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	javadoc		# don't build javadoc
 #
-%include	/usr/lib/rpm/macros.java
 %define		_snap	20070504-1631
 Summary:	WebScarab - a Web Application Review tool for Java
 Summary(pl.UTF-8):	WebScarab - narzędzie do oceny aplikacji WWW w Javie
